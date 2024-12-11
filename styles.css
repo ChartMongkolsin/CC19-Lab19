@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    min-height: 50px;
+    background-color: aqua;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-inline: 8px;
+}
+nav a{
+    text-decoration: none;
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 4px;
+    font-size: 20px;
+    border-radius: 8px;
+
+}
+@media(max-width:800px){
+    nav{
+        justify-content: space-around;
+    }
+    nav a{
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+@media(max-width:600px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
